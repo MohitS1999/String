@@ -9,6 +9,7 @@ public class ReverseTheString{
 			String res=new String();
 			int i=0;
 			int n=s.length();
+			//loop
 			while (i<n){
 				while (i<n && s.charAt(i)==' ') i++;
 				if (i>=n) break;
