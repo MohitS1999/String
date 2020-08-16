@@ -17,15 +17,15 @@ public class LengthOfCommonSubsequenceTTB{
         return lcs(text1,text2,m,n,dp);
     }
      public static int lcs(String x,String y,int m,int n,int[][] dp){
-		// Base COndition
+	// Base COndition
         if (m==0 || n==0) return 0;
-		// Memorization
+	// Memorization
         if (dp[m][n]!=0) return dp[m][n];
-		// if both the character is same from the last of the string
+	// if both the character is same from the last of the string
         if (x.charAt(m-1)==y.charAt(n-1))
             return dp[m][n]=lcs(x,y,m-1,n-1,dp)+1;
         else 
-			// if not,then we  reduce by 1 from  both the string one by one
+	// if not,then we  reduce by 1 from  both the string one by one
             return dp[m][n]=Math.max(lcs(x,y,m-1,n,dp),lcs(x,y,m,n-1,dp));
     }
 }
