@@ -9,6 +9,8 @@ public class LengthOfCommonSubstringBTT{
 			System.out.println(commonSubstring(x,y,x.length(),y.length()));
 		}
 	}
+	
+	//With memorization
 	public static int commonSubstring(String x,String y,int n,int m){
 		int dp[][]=new int[n+1][m+1];
 		int res=0;
