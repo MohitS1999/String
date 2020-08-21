@@ -7,7 +7,11 @@ public class LengthOfLongestPalindromeSubsequenceBTT{
 			String a=sc.next();
 			StringBuffer sb=new StringBuffer();
 			sb.append(a);
+			//reverse the string
+			
 			sb.reverse();
+			
+			//function call
 			System.out.println(palindromeSub(a,sb.toString()));
 		}
 	}
