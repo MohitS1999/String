@@ -16,9 +16,9 @@ public class LengthOfLongestPalindromeSubsequenceTTB{
 	public static int palindromeSub(String a,String b,int m,int n,int dp[][]){
 		// Base Condition
 		if (m==0 || n==0) return 0;
-		//Memorization
+		// Memorization
 		if (dp[m][n]!=0) return dp[m][n];
-		
+		// check character of both string is equal or not
 		if (a.charAt(m-1)==b.charAt(n-1)){
 			return dp[m][n]=palindromeSub(a,b,m-1,n-1,dp)+1;
 		}else{
