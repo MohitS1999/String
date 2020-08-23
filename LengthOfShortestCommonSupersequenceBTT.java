@@ -13,6 +13,7 @@ public class LengthOfShortestCommonSupersequenceBTT{
 		}
 		
 	}
+	Longest Common Subsequence
 	public static int commonSubsequence(String a,String b,int m,int n){
 		int dp[][]=new int[m+1][n+1];
 		for (int i=1;i<=m;i++){
