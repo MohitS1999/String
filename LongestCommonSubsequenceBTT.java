@@ -9,6 +9,7 @@ public class LongestCommonSubsequenceBTT{
 			System.out.println(commonSubsequence(x,y,x.length(),y.length()));
 		}
 	}
+	//Common Subsequence
 	public static String commonSubsequence(String x,String y,int m,int n){
 		int dp[][]=new int[m+1][n+1];
 		for (int i=1;i<=m;i++){
