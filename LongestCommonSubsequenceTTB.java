@@ -29,6 +29,7 @@ public class LongestCommonSubsequenceTTB{
 			
 		}
 	}
+	//LCS which is gives the length of common string
 	public static int commonSubsequence(String x,String y,int m,int n,int[][] dp){
 		//Base condition
 		if (m==0 || n==0) return 0;
