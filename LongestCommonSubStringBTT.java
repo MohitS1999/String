@@ -29,6 +29,7 @@ public class LongestCommonSubStringBTT{
 				else dp[i][j]=0;
 			}
 		}
+		//longest substring
 		String s="";
 		while (dp[indexI][indexJ]!=0){
 			s=a.charAt(indexI-1)+s;
