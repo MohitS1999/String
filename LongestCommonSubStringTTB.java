@@ -12,6 +12,7 @@ public class LongestCommonSubStringTTB{
 			int dp[][]=new int[m+1][n+1];
 			String s="";
 			commonSubstring(a,b,m,n,dp);
+			//find the common substring from the dp matrix
 			while (dp[indexI][indexJ]!=0){
 				s=a.charAt(indexI-1)+s;
 				indexI--;
