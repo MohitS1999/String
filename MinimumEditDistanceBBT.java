@@ -1,3 +1,4 @@
+//Leetcode 
 import java.util.*;
 public class MinimumEditDistanceBBT{
 	public static void main(String[] arhs){
@@ -6,6 +7,7 @@ public class MinimumEditDistanceBBT{
 		String b=sc.next();
 		System.out.println(minEditDis(a,b,a.length(),b.length()));
 	}
+	//function
 	public static int minEditDis(String a,String b ,int m,int n){
 		int dp[][]=new int[m+1][n+1];
 		for (int i=0;i<=m;i++){
