@@ -10,8 +10,11 @@ public class MinimumEditDistanceTTB{
 		System.out.println(minEditDis(a,b,m,n,dp));
 	}
 	public static int minEditDis(String a,String b,int m,int n,int[][] dp){
+		//whenever the len of both the string is 0
 		if (m==0 && n==0) return 0;
+		//len of m string is 0
 		if (m==0 && n>0) return n;
+		//len of n string is 0
 		if (m>0 && n==0) return m;
 		if (dp[m][n]!=0) return dp[m][n];
 		if (a.charAt(m-1)==b.charAt(n-1)){
