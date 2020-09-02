@@ -12,7 +12,6 @@ public class MinNoOfDeletionInStringToMakePalindromeBTT{
 			System.out.println("Min Deletion required to make string palindromic :-  "+(a.length()-longestPalindrome));
 		}
 	}
-	//longest common subsequence
 	public static int LCS(String a,String b){
 		int m=a.length();
 		int dp[][]=new int[m+1][m+1];
