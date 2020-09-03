@@ -17,7 +17,8 @@ public class LengthOfCommonSubstringBTT{
 		for (int i=0;i<n;i++){
 			for (int j=0;j<m;j++){
 				if (x.charAt(i)==y.charAt(j))
-				{
+				{       
+					//if the character is same from both the string
 					dp[i+1][j+1]=dp[i][j]+1;
 					res=Math.max(res,dp[i+1][j+1]);
 				}
