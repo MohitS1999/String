@@ -16,6 +16,7 @@ public class LengthOfCommonSubsequenceTTB{
         int dp[][]=new int[m+1][n+1];
         return lcs(text1,text2,m,n,dp);
     }
+     //Recursive solution
      public static int lcs(String x,String y,int m,int n,int[][] dp){
 	// Base COndition
         if (m==0 || n==0) return 0;
