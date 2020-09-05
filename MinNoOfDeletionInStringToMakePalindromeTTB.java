@@ -14,6 +14,7 @@ public class MinNoOfDeletionInStringToMakePalindromeTTB{
 			System.out.println("Min Deletion required to make string palindromic :-  "+(m-LongestPalindrome));
 		}
 	}
+	//LCS
 	public static int longestPalindrome(String a,String b,int m,int n,int dp[][]){
 		if (m==0|| n==0) return 0;
 		if (dp[m][n]!=0) return dp[m][n];
