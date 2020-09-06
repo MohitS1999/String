@@ -11,6 +11,7 @@ public class MinNoOfInsertionAndDeletionConvertATOB_BTT{
 			System.out.println("Minimum number of Deletion to convert A to B :- "+(a.length()-commonSubsequence));
 		}
 	}
+	//LCS
 	public static int LCS(String a,String b){
 		int m=a.length();
 		int n=b.length();
