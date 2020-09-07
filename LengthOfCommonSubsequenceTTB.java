@@ -26,7 +26,7 @@ public class LengthOfCommonSubsequenceTTB{
         if (x.charAt(m-1)==y.charAt(n-1))
             return dp[m][n]=lcs(x,y,m-1,n-1,dp)+1;
         else 
-	// if not,then we  reduce by 1 from  both the string one by one
+	    // if not,then we  reduce by 1 from  both the string one by one
             return dp[m][n]=Math.max(lcs(x,y,m-1,n,dp),lcs(x,y,m,n-1,dp));
     }
 }
