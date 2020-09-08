@@ -14,6 +14,7 @@ public class MinNoOfInsertionAndDeletionConvertATOB_TTB{
 			System.out.println("Minimum number of Deletion to convert A to B :- "+(m-commonSubsequence));
 		}
 	}
+	//LCS
 	public static int LCS(String a,String b,int m,int n,int[][] dp){
 		//Base Condition
 		if (m==0 || n==0){
