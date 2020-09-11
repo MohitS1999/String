@@ -39,6 +39,7 @@ public class ShortestCommonSupersequenceBTT{
 				}
 			}
 		}
+		//remaining character
 		while (i!=0){
 			s=a.charAt(i-1)+s;
 			i--;
