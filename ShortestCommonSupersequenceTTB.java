@@ -39,6 +39,7 @@ public class ShortestCommonSupersequenceTTB{
 			System.out.println(s);
 		}
 	}
+	// Longest common subsequence
 	public static int LCS(String a,String b,int m,int n,int[][] dp){
 		if (m==0||n==0) return 0;
 		if (dp[m][n]!=0) return dp[m][n];
