@@ -15,6 +15,7 @@ public class LengthOfLongestPalindromeSubsequenceBTT{
 			System.out.println(palindromeSub(a,sb.toString()));
 		}
 	}
+	//LCS
 	public static int palindromeSub(String a,String b){
 		int m=a.length();
 		int dp[][]=new int[m+1][m+1];
